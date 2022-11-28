@@ -8,15 +8,17 @@
 const names = ['Michela', 'Giuseppina', 'Taylor','Donna', 'Marsha', 'Fabio', 'Roberto'];
 const lastnames = ['Cappelletti', 'Jager', 'Porcinelli' , 'Buffetti' , 'Forghieri', 'Papagni', 'Marazzini'];
 
-let random= Math.floor(Math.random()*names.length)
 
 let name= [];
 
-let randomName
+let randomName;
 
-for(i= 0; i<names.length; i++){
+let howMany= parseInt(prompt("quanti nomi"))
+
+for(i= 0; i<howMany; i++){
+  let random= Math.floor(Math.random()*names.length);
   randomName = `${names[random]} ${lastnames[random]}`;
-  name.push(randomName)
+  name.push(randomName);
 }
 
-console.log(name)
+console.log(name);
