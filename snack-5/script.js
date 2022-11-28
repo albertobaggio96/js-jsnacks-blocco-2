@@ -16,8 +16,9 @@ let randomName;
 let howMany= parseInt(prompt("quanti nomi"))
 
 for(i= 0; i<howMany; i++){
-  let random= Math.floor(Math.random()*names.length);
-  randomName = `${names[random]} ${lastnames[random]}`;
+  let randomName= Math.floor(Math.random()*names.length);
+  let randomLastName= Math.floor(Math.random()*names.length);
+  randomName = `${names[randomName]} ${lastnames[randomLastName]}`
   name.push(randomName);
 }
 
